@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "binary_trees.h"
 
 /**
@@ -12,9 +12,9 @@ int main(void)
     binary_tree_t *root;
 
     root = binary_tree_node(NULL, 98);
-    if (!root)
+    if (root == NULL)
     {
-        printf("Failed to create the root node\n");
+        fprintf(stderr, "Failed to create root node\n");
         return (1);
     }
 
