@@ -18,6 +18,8 @@ int main(void)
         return (1);
     }
 
-    printf("Node created with value %d\n", root->n);
+    binary_tree_insert_left(root, 54);
+
+    printf("Node created with value %d\n", root->left->n);
     return (0);
 }
